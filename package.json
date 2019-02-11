@@ -1,0 +1,26 @@
+{
+  "name": "project-server",
+  "version": "1.0.0",
+  "description": "project planner capstone",
+  "main": "server.js",
+  "scripts": {
+    "test": "hello world",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephanieB34/project-server.git"
+  },
+  "author": "Stephanie Beres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephanieB34/project-server/issues"
+  },
+  "homepage": "https://github.com/StephanieB34/project-server#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0"
+  }
+}
