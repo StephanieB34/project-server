@@ -3,8 +3,12 @@
 const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
+const passport = require ("passport");
+const bodyParser = require("body-Parser");
+mongoose.promise = global.Promise;
 
-
+const{DATABASE_URL, PORT} = require('./config');
+const {projects} = require('./models');
 const projectsRouter = require("./projectsRouter");
 const app = express();
 
@@ -13,7 +17,13 @@ app.use(express.json());
 
 app.use("/projects" , projectsRouter);
 
-let server;
+/*app.get('./project', (req, res) => {
+    Projects
+    .find()
+    .then(post => {
+        
+    })
+})*/
 
 function runServer () {
     const port = process.env.port || 8080 ;
