@@ -1,3 +1,5 @@
+'use strict';
+
 const uuid = require("uuid");
 
 function StorageException(message) {
@@ -18,5 +20,5 @@ const projects = {
         return post;
     },
 
-    
+
 }
